@@ -6,8 +6,28 @@ class PostService {
   }
 
   async find() {
-    const rta = await models.Post.findAll();
+    let rta = await models.Post.findAll();
     return rta;
+  }
+
+  async findOne(id) {
+    let post = await models.Post.findByPk(id);
+    if(!post) {
+      return "post not found"
+    }
+    return post;
+  }
+
+  async create({title, description, web, images}) {
+
+    let post = await models.Post.create({
+      title,
+      description,
+      web,
+      images
+    });
+    return post;
+
   }
 
 }
