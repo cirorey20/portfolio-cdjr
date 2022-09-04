@@ -17,10 +17,22 @@ const PostSchema = {
     type: DataTypes.TEXT,
     allowNull: false,
   },
+  repoGitHub: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: 'repo_github',
+    unique: true,
+  },
+  linkVideo: {
+    allowNull: true,
+    type: DataTypes.STRING,
+    field: 'link_video',
+    unique: true,
+  },
   web: {
-      allowNull: true,
-      type: DataTypes.STRING,
-      unique: true,
+    allowNull: true,
+    type: DataTypes.STRING,
+    unique: true,
   },
   images: {
     allowNull: true,

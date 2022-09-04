@@ -20,8 +20,6 @@ router.get('/:id', async(req,res,next)=> {
         if (id) {
             let post = await service.findOne(id)
             res.json(post);
-        } else {
-            res.send(`NO HAY PARAMS`);
         }
     } catch (error) {
         next(error)
@@ -30,7 +28,7 @@ router.get('/:id', async(req,res,next)=> {
 
 router.post('/', async (req, res, next) => {
     try {
-        if(!req.body.title || !req.body.description || !req.body.web || !req.body.images) {
+        if(!req.body.title || !req.body.description || !req.body.repoGitHub || !req.body.web || !req.body.images) {
             res.send({message: `Fields are missing`})            
         }
         let newPost = await service.create(req.body);
@@ -43,10 +41,24 @@ router.post('/', async (req, res, next) => {
 router.patch('/:id',
     async(req,res,next) => {
         try {
-            const {id} = req.params
-            res.send(`Id del post ${id}`)
+            const {id} = req.params;
+            const body = req.body;
+            const postUpdate = await service.update(id, body)
+            res.send(postUpdate);
         } catch (error) {
             next(error);
+        }
+    }
+)
+
+router.delete('/:id',
+    async(req,res,next) => {
+        try {
+            const {id} = req.params
+            await service.delete(id);
+            res.send(`post ${id} Eliminado`)
+        } catch (error) {
+            next(error)
         }
     }
 )
