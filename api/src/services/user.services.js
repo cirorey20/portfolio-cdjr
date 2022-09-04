@@ -10,6 +10,11 @@ class UserService {
     return rta;
   }
 
+  async create(body) {
+    const rta = await models.User.create(body);
+    return rta
+  }
+
 }
 
 module.exports = UserService;

@@ -13,4 +13,19 @@ router.get('/', async (req,res, next) => {
     }
 })
 
+router.post('/', async (req,res,next) => {
+    try {
+        const users = await service.find();
+        
+        if (users[0]) { //solo crea un solo usuario en la base de datos
+            return res.send("not autorization")
+        }
+        let user = req.body;
+        await service.create(user)
+        res.send({mesaage: user});
+    } catch (error) {
+        next(error);
+    }
+})
+
 module.exports = router;
