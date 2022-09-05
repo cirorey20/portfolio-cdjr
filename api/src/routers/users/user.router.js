@@ -21,8 +21,8 @@ router.post('/', async (req,res,next) => {
             return res.send("not autorization")
         }
         let user = req.body;
-        await service.create(user)
-        res.send({mesaage: user});
+        let newUser = await service.create(user)
+        res.send({mesaage: newUser});
     } catch (error) {
         next(error);
     }
