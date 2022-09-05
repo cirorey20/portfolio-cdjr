@@ -13,6 +13,16 @@ router.get('/', async (req,res, next) => {
     }
 })
 
+router.get('/:id', async (req,res, next) => {
+    try {
+        let {id} = req.params
+        const user = await service.findOne(id);
+        res.status(200).json(user)
+    } catch (error) {
+        next(error)
+    }
+})
+
 router.post('/', async (req,res,next) => {
     try {
         const users = await service.find();

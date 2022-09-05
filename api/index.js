@@ -19,6 +19,9 @@ app.use((req, res, next) => {
     next();
 });
 
+//importamos nuestra logica de auth
+require('./utils/auth')
+
 //aca mostrando la ruta principal
 app.get('/', (req, res) => {
     res.send("Esta funcionando correctamente!");
