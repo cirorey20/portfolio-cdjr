@@ -26,4 +26,14 @@ router.post('/', async(req,res,next)=> {
     }
 })
 
+router.patch('/', async(req,res,next)=>{
+    try {
+        let body = req.body
+        let change = await service.update(body);
+        res.send(change)
+    } catch (error) {
+        next(error)
+    }
+})
+
 module.exports = router
