@@ -11,6 +11,19 @@ router.get('/', async (req,res,next) => {
     } catch (error) {
         next(error)
     }
+});
+
+router.post('/', async(req,res,next)=> {
+    try {
+        let isProfile = await service.find();
+        if (isProfile[0]) {
+            return res.send('There is already a profile');
+        }
+        let profile = await service.create();
+        res.send(profile);
+    } catch (error) {
+        next(error)
+    }
 })
 
 module.exports = router
