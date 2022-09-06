@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const passport = require('passport');
 
 const PostService = require('../../services/post.service')
 const service = new PostService();
@@ -26,7 +27,9 @@ router.get('/:id', async(req,res,next)=> {
     }
 })
 
-router.post('/', async (req, res, next) => {
+router.post('/', 
+    passport.authenticate('jwt', {session:false}),
+    async (req, res, next) => {
     try {
         if(!req.body.title || !req.body.description || !req.body.repoGitHub || !req.body.web || !req.body.images) {
             res.send({message: `Fields are missing`})            
