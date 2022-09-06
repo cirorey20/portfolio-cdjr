@@ -15,6 +15,7 @@ const LocalStrategy = new Strategy(async (email, password, done) => {
         if(!isMatch) {
             done(boom.unauthorized(), false);
         }
+        delete user.dataValues.password;
         done(null, user)
     } catch (error) {
         done(error, false)
