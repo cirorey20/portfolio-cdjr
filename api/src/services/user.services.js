@@ -1,6 +1,5 @@
 const {models} = require('../../libs/sequelize');
 const bcrypt = require('bcrypt');
-const { use } = require('passport');
 
 class UserService {
 
