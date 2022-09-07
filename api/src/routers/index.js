@@ -6,6 +6,7 @@ const profileRouter = require('./profiles/profile.router');
 
 const {checkApiKey} = require('../middlewares/auth.handler');
 const authRouter = require('./auth/auth.router');
+const contactRouter = require('./contact/contact.router');
 
 function routerApi(app) {
     const router = express.Router();
@@ -17,6 +18,7 @@ function routerApi(app) {
     router.use('/posts', postsRouter);
     router.use('/profile', profileRouter);
     router.use('/auth', authRouter);
+    router.use('/contact', contactRouter);
 
 }
 
