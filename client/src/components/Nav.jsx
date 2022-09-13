@@ -14,18 +14,18 @@ const Nav = () => {
                     alt="Flowbite Logo"
                 />
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                    Flowbite
+                    CiroDJR
                 </span>
             </Navbar.Brand>
             <Navbar.Toggle />
-            <Navbar.Collapse>
+            <Navbar.Collapse className="bg-blue-700">
                 <Navbar.Link
                     href="/navbars"
                     active={true}
                 >
                     Home
                 </Navbar.Link>
-                <Navbar.Link href="/navbars">
+                <Navbar.Link href="/navbars" >
                     About
                 </Navbar.Link>
                 <Navbar.Link href="/navbars">
