@@ -15,16 +15,4 @@ code {
 @tailwind components;
 @tailwind utilities;
 @import "./styles/nav.css";
-
-
-/* .btn-blue {
-  @apply bg-blue-500 text-white;
-} */
-
-.btn-blue:hover {
-  @apply bg-blue-700;
-}
-
-.card {
-  @apply rounded overflow-hidden shadow-lg;
-}
+@import "./styles/about.css";
