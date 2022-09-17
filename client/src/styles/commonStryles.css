@@ -1,3 +1,8 @@
 .parentContainer {
     @apply container relative w-[80vw] md:w-[60vw] left-[10vw] md:left-[20vw] top-[5vh]
 }
+
+.titleSections {
+    @apply mt-40 grid place-content-center text-blue-600 dark:text-blue-500 font-medium text-4xl
+}
+

@@ -6,7 +6,7 @@ const Footer = () => {
         <Fragment>
             <div 
             className="
-                mt-24
+                mt-40
                 grid place-content-center 
                 text-3xl"
             >
@@ -33,13 +33,11 @@ const Footer = () => {
                             className="
                                 bg-blue-300
                                 
+
+
                                 grid 
                                 grid-cols-1 
-                                md:grid-cols-1 
-                                lg:grid-cols-3
                                 gap-4
-                                
-                                
                                 place-items-center
 
                             "

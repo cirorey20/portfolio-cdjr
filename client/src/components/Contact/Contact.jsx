@@ -5,52 +5,32 @@ const Contact = () => {
     return (
         <Fragment>
             <div 
-            className="
-                mt-24
-                grid place-content-center 
-                text-3xl"
+            className="titleSections"
             >
-                Contact
+                Contact me
             </div>
 
-            <div //contenedor padre principal
-                className="parentContainer"
-            >
-                <div //contenedos padre de datos y sobre mi
-                    className="
-                        
-                        p-5
-                        
-                    "
-                >
-                        {/* contenedor de Datos */}
-                        <div 
-                            className="
-                                bg-blue-300
-                                
-                                grid 
-                                grid-cols-1 
-                                md:grid-cols-1 
-                                lg:grid-cols-3
-                                gap-4
-                                
-                                
-                                place-items-center
+            <div className="parentContainer pt-5">
+                <div className="pt-5">
+                        {/* contenedor de Form */}
+                        <div className="contactContainer"> 
+                            <div className="formContainer">
+                                <div className="mb-6">
+                                    <label htmlFor="base-input" className="labelContact">Subject</label>
+                                    <input type="text" id="base-input" className="inputContact"/>
+                                </div>
+                                <div className="mb-6">
+                                    <label htmlFor="base-input" className="labelContact">Email</label>
+                                    <input type="text" id="base-input" className="inputContact"/>
+                                </div>
+                                <div className="mb-6">
+                                    <label htmlFor="message" className="labelContact">Your message</label>
+                                    <textarea id="message" rows="4" className="texTareaContact" placeholder="Leave a comment..."></textarea>
+                                </div>
+                                <div className="btnContainer">
 
-                            "
-                        > 
-                            <div className="
-                                    bg-red-100 
-                                    w-[65vw]
-                                    md:w-[46vw]
-                                    lg:w-[17vw]
-
-                                    h-[25vw]
-                                    md:h-[25vw]
-                                    lg:h-[10vw]
-                                "
-                            >
-                                FORM
+                                    <button type="submit" className="btnContact bg-blue-700">Send</button>
+                                </div>
                             </div>
                             
                         </div>

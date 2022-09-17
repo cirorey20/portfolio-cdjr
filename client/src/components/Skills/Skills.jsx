@@ -5,16 +5,7 @@ const Skills = () => {
     return (
         <Fragment>
             <div 
-            className="
-                mt-24
-                grid place-content-center 
-                text-blue-600 dark:text-blue-500
-                font-medium
-                text-4xl
-            "
-            >
-                Skills
-            </div>
+            className="titleSections">Skills</div>
 
             <div //contenedor padre principal
                 className="parentContainer"
