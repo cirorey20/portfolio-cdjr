@@ -4,10 +4,10 @@
 
 
 .dataContainer {
-    @apply bg-blue-300 basis-1/3 flex flex-col md:flex-col
+    @apply basis-1/3 flex flex-col md:flex-col
 }
 
 .avatarImg {
-    @apply w-20 ml-[30vw] md:ml-[7vw]
+    @apply w-40 md:w-48 lg:w-60 ml-[26vw] md:ml-[18vw] lg:ml-[3vw]
 }
 

@@ -1,3 +1,3 @@
 .parentContainer {
-    @apply bg-green-300 container relative w-[80vw] md:w-[60vw] left-[10vw] md:left-[20vw] top-[5vh]
+    @apply container relative w-[80vw] md:w-[60vw] left-[10vw] md:left-[20vw] top-[5vh]
 }

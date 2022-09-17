@@ -1,20 +1,39 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useEffect} from "react";
+// import { useSelector, useDispatch } from 'react-redux';
+// import { getPots } from '../../redux/actions/index';
 
 const About = () => {
+
+    // const dispatch = useDispatch();
+    // const allPosts = useSelector( ( state ) => state.posts);
+
+    // useEffect(()=>{
+    //     dispatch(getPots());
+    //     console.log("HOlaaa", allPosts);
+    // }, [dispatch])
 
     return (
         <Fragment>
             <div 
             className="
-                mt-10
+                mt-20
                 grid place-content-center 
-                text-3xl"
+                text-3xl
+            "
             >
-                About Me
+
+                <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-blue-400">
+                        Ciro Rey <br />
+                    </span>
+                    FullStack Developer.
+                </h1>
+
+
             </div>
 
             <div //contenedor padre principal
-                className="parentContainer"
+                className="parentContainer mb-[10vw]"
             >
                 <div //contenedos padre de datos y sobre mi
                     className="dataAboutContainer"
@@ -24,47 +43,47 @@ const About = () => {
                             className="dataContainer"
                         > 
                             <img 
-                                className="avatarImg"
-                                src="https://flowbite.com/docs/images/logo.svg" 
+                                className="avatarImg rounded-full"
+                                src="https://avatars.githubusercontent.com/u/74796071?v=4" 
                                 alt="me" 
                             />
                             <table className="table-auto m-5 ">
                                 <tbody className="">
                                     <tr className=" ">
-                                        <td className="bg-red-100 pr-10">
+                                        <td className="bg-red-100 pr-10 font-mono">
                                             Name:
                                         </td>
-                                        <td className="bg-red-400 pl-10">
+                                        <td className="bg-red-200 pl-10 font-mono text-gray-700">
                                             Ciro Rey
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody className="">
                                     <tr className=" ">
-                                        <td className="bg-red-100 pr-10">
+                                        <td className="bg-red-100 pr-10 font-mono">
                                             Lugar:
                                         </td>
-                                        <td className="bg-red-400 pl-10">
-                                            Buenos Aires, Argentina
+                                        <td className="pl-10 font-mono text-gray-700">
+                                            B.A, Argentina
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody className="">
                                     <tr className=" ">
-                                        <td className="bg-red-100 pr-10">
+                                        <td className="bg-red-100 pr-10 font-mono">
                                             Email:
                                         </td>
-                                        <td className="bg-red-400 pl-10">
+                                        <td className="bg-red-200 pl-10 font-mono text-gray-700">
                                             cirolakjsdas@asd.com
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody className="">
                                     <tr className=" ">
-                                        <td className="bg-red-100 pr-10">
+                                        <td className="bg-red-100 pr-10 font-mono">
                                             Web:
                                         </td>
-                                        <td className="bg-red-400 pl-10">
+                                        <td className=" pl-10 font-mono text-gray-700">
                                             asdasd.com
                                         </td>
                                     </tr>
@@ -73,13 +92,13 @@ const About = () => {
                         </div>
 
                         {/* contenedor de Sobre mi */}
-                        <div className="bg-red-300 basis-1/2">
-                            <div className="grid place-content-center ">Hello</div>
-                            <div className="grid place-content-center ">
+                        <div className="basis-1/2">
+                            <div className="grid place-content-center text-2xl">Hello</div>
+                            <div className="grid place-content-center font-serif text-lg text-center indent-8">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod similique quidem porro a, alias facere tenetur, doloribus et dolore, enim velit quo culpa odit sapiente illo aperiam veritatis ipsum!
                                 Nulla, quod consectetur officia odio aut, nesciunt quasi facere iusto ipsum vitae explicabo culpa deleniti laudantium deserunt vel, nihil voluptate quidem quisquam voluptatum! Numquam voluptatibus ad.
                             </div>
-                            <div className="grid place-content-center mt-5">
+                            <div className="grid place-content-center mt-5 font-serif text-lg text-center indent-8">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod similique quidem porro a, alias facere tenetur, doloribus et dolore, enim velit quo culpa odit sapiente illo aperiam veritatis ipsum!
                                 Nulla, quod consectetur officia odio aut, nesciunt quasi facere iusto ipsum vitae explicabo culpa deleniti laudantium deserunt vel, nihil voluptate quidem quisquam voluptatum! Numquam voluptatibus ad.
                             </div>

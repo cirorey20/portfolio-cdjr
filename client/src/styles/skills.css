@@ -2,5 +2,5 @@
     @apply p-5 flex flex-col md:flex-col lg:flex-row place-content-center md:justify-evenly
 }
 .skillsContainerSecondary {
-    @apply bg-blue-300 flex flex-col md:flex-col w-[74vw] md:w-[55vw]
+    @apply flex flex-col md:flex-col w-[74vw] md:w-[55vw]
 }
