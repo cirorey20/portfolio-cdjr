@@ -8,6 +8,6 @@
 }
 
 .avatarImg {
-    @apply w-40 md:w-48 lg:w-60 ml-[26vw] md:ml-[18vw] lg:ml-[3vw]
+    @apply w-40 md:w-48 lg:w-60 ml-[26vw] md:ml-[18vw] lg:ml-[3vw] rounded-full drop-shadow-2xl
 }
 

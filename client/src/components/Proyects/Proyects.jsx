@@ -8,7 +8,11 @@ const Proyects = () => {
             className="
                 mt-24
                 grid place-content-center 
-                text-3xl"
+                text-blue-600 dark:text-blue-500
+                font-medium
+                text-4xl 
+                
+            "
             >
                 Proyects
             </div>
@@ -27,7 +31,7 @@ const Proyects = () => {
                         <div 
                             className="cardContainer"
                         > 
-                            <div className="cardResponsive"
+                            <div className="cardResponsive ease-in duration-300"
                             >
                                 CAR 1
                             </div>

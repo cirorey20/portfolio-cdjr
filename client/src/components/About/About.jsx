@@ -43,7 +43,7 @@ const About = () => {
                             className="dataContainer"
                         > 
                             <img 
-                                className="avatarImg rounded-full"
+                                className="avatarImg "
                                 src="https://avatars.githubusercontent.com/u/74796071?v=4" 
                                 alt="me" 
                             />
