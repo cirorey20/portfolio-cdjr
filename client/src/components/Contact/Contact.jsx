@@ -14,19 +14,7 @@ const Contact = () => {
             </div>
 
             <div //contenedor padre principal
-                className="
-                    bg-green-300 
-                    container
-                    relative
-                    
-
-                    w-[80vw]
-                    md:w-[60vw]
-
-                    left-[10vw]
-                    md:left-[20vw]
-                    top-[5vh]
-                "
+                className="parentContainer"
             >
                 <div //contenedos padre de datos y sobre mi
                     className="

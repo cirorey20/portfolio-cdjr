@@ -14,42 +14,14 @@ const Skills = () => {
             </div>
 
             <div //contenedor padre principal
-                className="
-                    bg-green-300 
-                    container
-                    relative
-                    
-
-                    w-[80vw]
-                    md:w-[60vw]
-
-                    left-[10vw]
-                    md:left-[20vw]
-                    top-[5vh]
-                "
+                className="parentContainer"
             >
-                <div //contenedos padre de datos y sobre mi
-                    className="
-                        
-                        p-5
-                        flex 
-                        flex-col
-                        md:flex-col
-                        lg:flex-row
-                        place-content-center
-                        md:justify-evenly
-                    "
+                <div //contenedor skills
+                    className="skillsContainer"
                 >
                         {/* contenedor de Datos */}
                         <div 
-                            className="
-                                bg-blue-300
-                                flex
-                                flex-col
-                                md:flex-col
-                                w-[74vw]
-                                md:w-[55vw]
-                            "
+                            className="skillsContainerSecondary"
                         > 
                             <table className="table-auto m-5 ">
                                 <tbody className="">

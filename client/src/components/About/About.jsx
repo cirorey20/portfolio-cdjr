@@ -14,49 +14,17 @@ const About = () => {
             </div>
 
             <div //contenedor padre principal
-                className="
-                    bg-green-300 
-                    container
-                    relative
-                    
-
-                    w-[80vw]
-                    md:w-[60vw]
-
-                    left-[10vw]
-                    md:left-[20vw]
-                    top-[5vh]
-                "
+                className="parentContainer"
             >
                 <div //contenedos padre de datos y sobre mi
-                    className="
-                        
-                        p-5
-                        flex 
-                        flex-col
-                        md:flex-col
-                        lg:flex-row
-                        place-content-center
-                        space-y-5
-                        md:space-y-0
-                        md:justify-evenly
-                    "
+                    className="dataAboutContainer"
                 >
                         {/* contenedor de Datos */}
                         <div 
-                            className="
-                                bg-blue-300 basis-1/3
-                                flex
-                                flex-col
-                                md:flex-col
-                            "
+                            className="dataContainer"
                         > 
                             <img 
-                                className="
-                                    w-20 
-                                    ml-[30vw]
-                                    md:ml-[7vw]
-                                "
+                                className="avatarImg"
                                 src="https://flowbite.com/docs/images/logo.svg" 
                                 alt="me" 
                             />
@@ -105,9 +73,7 @@ const About = () => {
                         </div>
 
                         {/* contenedor de Sobre mi */}
-                        <div className="
-                                bg-red-300 basis-1/2
-                            ">
+                        <div className="bg-red-300 basis-1/2">
                             <div className="grid place-content-center ">Hello</div>
                             <div className="grid place-content-center ">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod similique quidem porro a, alias facere tenetur, doloribus et dolore, enim velit quo culpa odit sapiente illo aperiam veritatis ipsum!
