@@ -1,16 +1,6 @@
-import React, {Fragment, useEffect} from "react";
-// import { useSelector, useDispatch } from 'react-redux';
-// import { getPots } from '../../redux/actions/index';
+import React, {Fragment} from "react";
 
-const About = () => {
-
-    // const dispatch = useDispatch();
-    // const allPosts = useSelector( ( state ) => state.posts);
-
-    // useEffect(()=>{
-    //     dispatch(getPots());
-    //     console.log("HOlaaa", allPosts);
-    // }, [dispatch])
+const About = ({headline, img, name, email, address, github, about}) => {
 
     return (
         <Fragment>
@@ -26,7 +16,7 @@ const About = () => {
                     <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-blue-400">
                         Ciro Rey <br />
                     </span>
-                    FullStack Developer.
+                    {headline}
                 </h1>
 
 
@@ -44,7 +34,7 @@ const About = () => {
                         > 
                             <img 
                                 className="avatarImg "
-                                src="https://avatars.githubusercontent.com/u/74796071?v=4" 
+                                src={img} 
                                 alt="me" 
                             />
                             <table className="table-auto m-5 ">
@@ -54,17 +44,7 @@ const About = () => {
                                             Name:
                                         </td>
                                         <td className="bg-red-200 pl-10 font-mono text-gray-700">
-                                            Ciro Rey
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody className="">
-                                    <tr className=" ">
-                                        <td className="bg-red-100 pr-10 font-mono">
-                                            Lugar:
-                                        </td>
-                                        <td className="pl-10 font-mono text-gray-700">
-                                            B.A, Argentina
+                                            {name}
                                         </td>
                                     </tr>
                                 </tbody>
@@ -73,18 +53,28 @@ const About = () => {
                                         <td className="bg-red-100 pr-10 font-mono">
                                             Email:
                                         </td>
-                                        <td className="bg-red-200 pl-10 font-mono text-gray-700">
-                                            cirolakjsdas@asd.com
+                                        <td className="pl-10 font-mono text-gray-700">
+                                            {email}
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody className="">
                                     <tr className=" ">
                                         <td className="bg-red-100 pr-10 font-mono">
-                                            Web:
+                                            Lugar:
+                                        </td>
+                                        <td className="bg-red-200 pl-10 font-mono text-gray-700">
+                                            {address}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody className="">
+                                    <tr className=" ">
+                                        <td className="bg-red-100 pr-10 font-mono">
+                                            Github:
                                         </td>
                                         <td className=" pl-10 font-mono text-gray-700">
-                                            asdasd.com
+                                            {github}
                                         </td>
                                     </tr>
                                 </tbody>
@@ -95,8 +85,7 @@ const About = () => {
                         <div className="basis-1/2">
                             <div className="grid place-content-center text-2xl">Hello</div>
                             <div className="grid place-content-center font-serif text-lg text-center indent-8">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod similique quidem porro a, alias facere tenetur, doloribus et dolore, enim velit quo culpa odit sapiente illo aperiam veritatis ipsum!
-                                Nulla, quod consectetur officia odio aut, nesciunt quasi facere iusto ipsum vitae explicabo culpa deleniti laudantium deserunt vel, nihil voluptate quidem quisquam voluptatum! Numquam voluptatibus ad.
+                                {about}
                             </div>
                             <div className="grid place-content-center mt-5 font-serif text-lg text-center indent-8">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod similique quidem porro a, alias facere tenetur, doloribus et dolore, enim velit quo culpa odit sapiente illo aperiam veritatis ipsum!

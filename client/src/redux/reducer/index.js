@@ -1,9 +1,11 @@
 const {
     GET_POSTS,
+    GET_PROFILE
 } = require('../actions/index');
 
 const initialState = {
     posts: [],
+    profile: []
 };
 
 function rootReducer(state = initialState, action) {
@@ -12,6 +14,12 @@ function rootReducer(state = initialState, action) {
         return {
             ...state,
             posts: action.payload
+        }
+    }
+    if ( action.type === GET_PROFILE ) {
+        return {
+            ...state,
+            profile: action.payload
         }
     }
 

@@ -55,6 +55,16 @@ const ProfileSchema = {
     type: DataTypes.STRING,
     defaultValue: 'age'
   },
+  address: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    defaultValue: 'Bs.As, Argentina'
+  },
+  fullName: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    defaultValue: 'Ciro De Jesus Rey'
+  },
   img: {
     allowNull: false,
     type: DataTypes.STRING,

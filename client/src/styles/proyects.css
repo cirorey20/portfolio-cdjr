@@ -1,7 +1,10 @@
 .cardContainer {
-    @apply grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 place-items-center 
+    @apply grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 place-items-center 
 }
 
 .cardResponsive {
     @apply bg-red-300 w-[65vw] md:w-[46vw] lg:w-[17vw] h-[25vw] md:h-[25vw] lg:h-[10vw] mt-3 rounded-lg drop-shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300
+}
+.hoverTrans{
+    @apply rounded-lg drop-shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300
 }
