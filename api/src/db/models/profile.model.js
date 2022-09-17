@@ -27,7 +27,23 @@ const ProfileSchema = {
   skillstech: {
     allowNull: true,
     type: DataTypes.JSON,
-    defaultValue: ['Js', 'Php']
+    defaultValue: [
+      {
+        name: "PHP",
+        img: "https://dusandev.netlify.app/assets/img/php.png",
+        level: "Intermedio"
+      },
+      {
+        name: "Javascript",
+        img: "https://dusandev.netlify.app/assets/img/js.png",
+        level: "Intermedio"
+      },
+      {
+        name: "NodeJs",
+        img: "https://dusandev.netlify.app/assets/img/nodejs.png",
+        level: "Intermedio"
+      }
+    ]
   },
   skillsnotech: {
     allowNull: true,
