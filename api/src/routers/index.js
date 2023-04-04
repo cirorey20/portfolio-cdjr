@@ -12,6 +12,7 @@ function routerApi(app) {
     const router = express.Router();
     app.use('/api/v1', router);//ruta de api principal
     router.use('/new-router', checkApiKey, (req,res)=>{
+        console.log("TAL COSA")
         res.send('Hola Soy Ciro')
     })
     router.use('/users', usersRouter);

@@ -6,6 +6,8 @@ const jwt = require('jsonwebtoken');
 
 const {config} = require('../../../config/config');
 
+//importante, a la hora de pasar los parameros devemos usar la propiedad "username" para el email
+//eseto es asi porque bycript utiliza este metodo
 router.post('/login',
     passport.authenticate('local', {session: false}),
     async (req,res,next) => {
@@ -16,7 +18,7 @@ router.post('/login',
                 role:user.role
             }
             const token = jwt.sign(payload, config.jwtSecret);
-
+            
             res.json({
                 user,
                 token

@@ -42,6 +42,7 @@ router.post('/',
 })
 
 router.patch('/:id',
+    passport.authenticate('jwt', {session:false}),
     async(req,res,next) => {
         try {
             const {id} = req.params;
